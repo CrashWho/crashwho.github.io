@@ -131,7 +131,7 @@ si trova una tabella.
 Il file `style.css` contiene l'estetica della pagina `index.html`.
 `piloti.css` e `costruttori.css` sono molto simili a quest'ultimo.
 
-Il font utilizzato si trova nella cartella [font](./fonts/Formula1-Bold.otf)
+Il font utilizzato si trova nella cartella [fonts](./fonts)
 
 ```css
 /* Import manuale del font */
