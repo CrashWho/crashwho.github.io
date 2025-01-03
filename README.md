@@ -14,7 +14,7 @@ Possiamo dividere questo file in **4 parti**:
    - Include il logo, che rimanda alla homepage.
    - Un menu di navigazione (`nav`) con link alle diverse sezioni del sito. C'è una voce "Classifica" che contiene un menù a tendina per la classifica piloti e i costruttori.
 
-   ```html
+```html
   <!-- Header -->
   <header>
     <div class="logo">
@@ -33,7 +33,7 @@ Possiamo dividere questo file in **4 parti**:
         </ul>
       </nav>
   </header>
-   ```
+```
 
 2. **Introduzione**:
 
