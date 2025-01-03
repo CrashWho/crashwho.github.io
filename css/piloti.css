@@ -1,0 +1,164 @@
+/* Import manuale del font */
+@font-face { 
+  font-family: 'F1';
+  src: url('../fonts/Formula1-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset del CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile generale */
+body {
+  font-family: 'F1', sans-serif;
+  color: rgb(68, 68, 68);
+  margin: 0;
+}
+
+/* Stile per gli elementi della barra in alto */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 50px;
+  color: #fff;
+  height: 80px;
+  box-sizing: border-box;
+}  
+
+
+header .logo img {
+  height: 500px;
+  width: auto;
+  margin-left: -60px;
+}
+
+/*Menù*/
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative; /* Requisito per il menù a tendina */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+/* Menù a tendina */
+.dropdown-menu {
+  display: none; /* Nascosto all'inizio */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: max-content;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  text-transform: none; 
+  transition: background-color 0.3s ease; 
+  border-radius: 4px;
+}
+
+.dropdown-menu li a:hover {
+background-color: #333;
+}
+
+/* Mostra il menù a tendina quando il mouse è sopra il link */
+  .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sezione generale della Tabella */
+.hero {
+  background-color: #F6F4F0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Contenitore della tabella */
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Tabella */
+.f1-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  border-radius: 12px; /* Bordo tondeggiante */
+  overflow: hidden; /* Rimuove il bordo all'interno */
+  
+}
+
+.f1-table th, .f1-table td {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  
+}
+
+/* Stile per le intestazioni */
+.f1-table th {
+  background-color: #111;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Colori per le righe */
+.f1-table tr:nth-child(even) {
+  background-color: #F3F3F3;
+}
+
+.f1-table tr:hover {
+  background-color: #8d8d8d;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}

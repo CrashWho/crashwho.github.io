@@ -1,0 +1,238 @@
+/* Import manuale del font */
+@font-face { 
+    font-family: 'F1';
+    src: url('../fonts/Formula1-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset del CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rimozione della sottolineatura quando viene visualizzato un testo con un collegamento */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Stile generale della pagina*/
+body { 
+  font-family: 'F1', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Stile per gli elementi della barra in alto */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 50px;
+  color: #fff;
+  height: 80px;
+  box-sizing: border-box;
+}  
+
+  
+header .logo img {
+  height: 500px;
+  width: auto;
+  margin-left: -60px;
+}
+  
+/*Menù*/
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative; /* Requisito per il menù a tendina */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+/* Menù a tendina */
+.dropdown-menu {
+  display: none; /* Nascosto all'inizio */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #111;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: max-content;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  text-transform: none; 
+  transition: background-color 0.3s ease; 
+  border-radius: 4px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #333;
+}
+
+/* Mostra il menù a tendina quando il mouse è sopra il link */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+/* Introduzione */
+.hero {
+  background-image: url('../img/index/f1car.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 50px;
+  text-align: center;
+} 
+  
+.hero-content h2 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+  
+/* Storia della F1 */  
+.history {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+  
+.history h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+  
+.history p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #666;
+}
+  
+/* Riquadro della storia */
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Stile del riquadro */
+.timeline-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ingrandendo il riquadro quando il mouse ci passa sopra  */
+.timeline-item:hover {
+  transform: scale(1.1); /* Il riquadro diventa il 10% più grande */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aggiunge un effetto sfumato */
+}
+  
+.timeline-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+  
+.timeline-item p {
+  font-size: 1em;
+}
+
+/* Layout per i gran premi */
+.gridtitle{
+  text-align: center; 
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.gridtitle h2{
+  font-size: 2.5em;
+  color: #333;
+}
+
+.gridtitle p{
+  font-size: 1.2em;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Stile dei riquadri */
+.card {
+  display: flex;
+  background-color: #1c1c1e;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Ingrandimento del riquadro quando il mouse ci passa sopra */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h2 {
+  padding: 15px;
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  text-align: center;
+}
+  
+/* Footer */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
+}
+  
