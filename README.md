@@ -8,7 +8,7 @@ F1 Experience è un sito web dedicato agli appassionati di Formula 1, che riflet
 
 Il file `index.html` contiene la struttura principale del sito.
 
-Il file può essere diviso in **4 parti**:
+Può essere diviso in **4 parti**:
 
 1. **Header**:
    - Include il logo, che rimanda alla homepage.
@@ -91,7 +91,7 @@ Il file può essere diviso in **4 parti**:
 I file `piloti.html`  e `costruttori.html `sono molto simili tra loro.
 
 La struttura dell'*header* è identica a quella di `index.html`, ma al posto della sezione introduttiva (hero)
-si trova una tabella.
+c'è una tabella.
 
 ```html
 <!-- Tabella -->
@@ -142,7 +142,7 @@ Il font utilizzato si trova nella cartella [fonts](./fonts)
     font-style: normal;
 }
 ```
-Il sistema del menù a tendina è fatto totalmente in CSS
+Il sistema del menù a tendina è fatto totalmente in CSS.
 
 ```css
 /* Menù a tendina */
@@ -186,7 +186,7 @@ Il sistema del menù a tendina è fatto totalmente in CSS
 }
 ```
 
-I riquadri della parte finale della pagina come quelli della storia sono molto simili
+La struttura dei riquadri inerenti alla timeline e ai gran premi sono molto simili.
 
 ```css
 /* Riquadro della storia */
@@ -223,7 +223,7 @@ I riquadri della parte finale della pagina come quelli della storia sono molto s
 }
 ```
 
-A fine della pagina c'è il footer
+Alla fine della pagina c'è il footer.
 
 ```css
 /* Footer */
@@ -238,7 +238,7 @@ footer {
 }
 ```
 
-I file delle classifiche si distinguono solo per la loro sezione sulla tabella
+I file delle classifiche si distinguono solo per la loro sezione sulle tabelle.
 
 ```css
 /* Sezione generale della Tabella */
@@ -295,5 +295,5 @@ I file delle classifiche si distinguono solo per la loro sezione sulla tabella
 
 # Conclusione
 
-Queste erano soltanto le informazioni principali, consiglio di controllare il codice sorgente per vedere tutte
-le informazioni 
+Queste erano soltanto le informazioni principali, consiglio di controllare il codice sorgente per visualizzare tutte
+le informazioni.
