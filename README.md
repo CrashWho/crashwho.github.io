@@ -295,5 +295,5 @@ I file delle classifiche si distinguono solo per la loro sezione sulla tabella
 
 # Conclusione
 
-Questo erano soltanto le informazioni principali, consiglio di controllare il codice sorgente per vedere tutte
+Queste erano soltanto le informazioni principali, consiglio di controllare il codice sorgente per vedere tutte
 le informazioni 
