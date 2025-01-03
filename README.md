@@ -8,7 +8,7 @@ F1 Experience è un sito web dedicato agli appassionati di Formula 1, che riflet
 
 Il file `index.html` contiene la struttura principale del sito.
 
-Possiamo dividere questo file in **4 parti**:
+Il file può essere diviso in **4 parti**:
 
 1. **Header**:
    - Include il logo, che rimanda alla homepage.
